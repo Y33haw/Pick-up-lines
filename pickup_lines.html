@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Pickup Lines Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            margin: 50px auto;
+            padding: 20px;
+            max-width: 500px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .pickup-line {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Random Pickup Line Generator</h1>
+        <p>Click the button to get a random pickup line!</p>
+        <button onclick="generatePickupLine()">Generate Pickup Line</button>
+        <div class="pickup-line" id="pickupLine">😄</div>
+    </div>
+    <script>
+        const pickupLines = [
+            "Are you a magician? Because whenever I look at you, everyone else disappears.",
+            "Do you have a map? I keep getting lost in your eyes.",
+            "Are you a parking ticket? Because you've got 'FINE' written all over you.",
+            "If you were a vegetable, you’d be a cute-cumber!",
+            "Are you French? Because Eiffel for you.",
+            "Do you have a Band-Aid? Because I just scraped my knee falling for you.",
+            "Is your name Google? Because you’ve got everything I’ve been searching for.",
+            "Are you a time traveler? Because I see you in my future.",
+            "Can you lend me a kiss? I promise I'll give it back.",
+            "Do you believe in love at first sight—or should I walk by again?",
+            "Are you a camera? Because every time I look at you, I smile.",
+            "Are you a Wi-Fi signal? Because I'm feeling a strong connection.",
+            "Do you have a name, or can I call you mine?",
+            "If you were a triangle, you’d be acute one.",
+            "Is it okay if I follow you home? Because my parents always told me to follow my dreams.",
+            "Are you an electrician? Because you’re lighting up my life.",
+            "Do you have the time? Because I just lost track when I saw you.",
+            "If beauty were a crime, you’d be serving a life sentence.",
+            "Are you made of copper and tellurium? Because you’re Cu-Te!",
+            "Are you a star? Because your beauty lights up the night.",
+            "Is your dad an artist? Because you’re a masterpiece.",
+            "Are you a keyboard? Because you’re just my type.",
+            "Do you have a mirror in your pocket? Because I can see myself in your pants.",
+            "Are you an alien? Because you just abducted my heart.",
+            "Is your name Chapstick? Because you’re da balm.",
+            "Are you a bank loan? Because you’ve got my interest.",
+            "Can you tell me the time? Because I just knew it was love o'clock when I saw you.",
+            "Are you a snowstorm? Because you’ve just made my heart freeze.",
+            "Are you a cat? Because you’re purr-fect.",
+            "If kisses were snowflakes, I’d send you a blizzard.",
+            "Are you a gardener? Because I’m digging you.",
+            "Is your name Ariel? Because we mermaid for each other.",
+            "Are you a baker? Because you’re sweet as pie.",
+            "Do you like Star Wars? Because Yoda one for me.",
+            "Are you an angel? Because you’ve fallen from heaven.",
+            "Are you a volcano? Because I lava you.",
+            "Are you an elevator? Because you’re taking me to another level.",
+            "Is your name Netflix? Because you’ve got me hooked.",
+            "Are you a flower? Because you brighten up my day.",
+            "If you were a sea creature, you’d be a fineapple.",
+            "Are you an astronaut? Because your beauty is out of this world.",
+            "Are you the ocean? Because I’m lost at sea.",
+            "Is your name Starbucks? Because I like you a latte.",
+            "Are you the sun? Because you brighten my day.",
+            "Is your name Waldo? Because someone like you is hard to find.",
+            "Are you a compass? Because you’ve pointed me in the right direction.",
+            "Are you a cloud? Because you make my day brighter.",
+            "Do you like Italian food? Because I’ve got a pizza my heart for you.",
+            "Are you a musician? Because you struck a chord in my heart.",
+            "Is your name Faith? Because you’re the answer to all my prayers.",
+            "Are you an artist? Because you just drew me in.",
+            "If you were a song, you’d be my favorite track.",
+            "Do you have a quarter? Because I want to call my mom and tell her I’ve met ‘the one.’",
+            "Are you lightning? Because you just struck my heart.",
+            "Are you a sunflower? Because you’re blooming beautifully in my life.",
+            "Are you a magician? Because you’ve just cast a spell on my heart.",
+            "If you were a fruit, you’d be a fineapple.",
+            "Are you an anchor? Because you’ve got me grounded.",
+            "Are you a painting? Because I could stare at you all day."
+        ];
+
+        function generatePickupLine() {
+            const randomIndex = Math.floor(Math.random() * pickupLines.length);
+            const line = pickupLines[randomIndex];
+            document.getElementById('pickupLine').textContent = line;
+        }
+    </script>
+</body>
+</html>
